@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="410.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuBarController">
+   <children>
+       <fx:define>
+           <ImageView fx:id="redlogo" fitHeight="20" fitWidth="15">
+               <Image url="@../images/red.png" />
+           </ImageView>
+       </fx:define>
+       <fx:define>
+           <ImageView fx:id="whitelogo" fitHeight="20" fitWidth="15">
+               <Image url="@../images/white.png" />
+           </ImageView>
+       </fx:define>
+       <fx:define>
+           <ImageView fx:id="roselogo" fitHeight="20" fitWidth="15">
+               <Image url="@../images/rose.png" />
+           </ImageView>
+       </fx:define>
+       <fx:define>
+           <ImageView fx:id="sparklinglogo" fitHeight="20" fitWidth="15">
+               <Image url="@../images/sparkling.png" />
+           </ImageView>
+       </fx:define>
+       <fx:define>
+           <ImageView fx:id="desertlogo" fitHeight="20" fitWidth="15">
+               <Image url="@../images/desert.png" />
+           </ImageView>
+       </fx:define>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="535.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Wine">
+
+              <Menu text="Red">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Search" />
+                      <MenuItem mnemonicParsing="false" onAction="#showRedInsert" text="Insert" />
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+              </Menu>
+              <Menu text="White">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Search" />
+                      <MenuItem mnemonicParsing="false" onAction="#showWhiteInsert" text="Insert" />
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+              </Menu>
+              <Menu text="Rose">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Search" />
+                      <MenuItem mnemonicParsing="false" onAction="#showRoseInsert" text="Insert" />
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+              </Menu>
+              <Menu text="Sparkling">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Search" />
+                      <MenuItem mnemonicParsing="false" onAction="#showSparklingInsert" text="Insert" />
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+              </Menu>
+              <Menu text="Dessert">
+                  <items>
+                      <MenuItem mnemonicParsing="false" text="Search" />
+                      <MenuItem mnemonicParsing="false" onAction="#showDessertInsert" text="Insert" />
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+              </Menu>
+
+          </Menu>
+          <Menu mnemonicParsing="false" text="Winery">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Search" />
+                  <MenuItem mnemonicParsing="false" text="Insert" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Location">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Search" onAction="#showLocationSearch"/>
+                    <MenuItem mnemonicParsing="false" text="Insert" onAction="#showLocationInsert" />
+                    <MenuItem mnemonicParsing="false" text="Delete" onAction="#showLocationDelete"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Meal">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Search" />
+                    <MenuItem mnemonicParsing="false" text="Insert" onAction="#showLocationInsert" />
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
